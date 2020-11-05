@@ -10,7 +10,7 @@ function Header() {
           <S.StyledLink to="/">
             <S.Logo src={logoImg} alt="Logo" />
           </S.StyledLink>
-          <S.LogoTitle>Filter clothes</S.LogoTitle>
+          <S.LogoTitle to="/">Filter clothes</S.LogoTitle>
         </S.LogoWrapper>
         <S.Actions>
           <S.StyledLink to="/">Home</S.StyledLink>
