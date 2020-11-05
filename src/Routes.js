@@ -1,7 +1,8 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-import { Header } from "./components";
+import { Header, Footer } from "./components";
+
 import { ProductSelection, About, Home } from "./pages";
 
 function Routes() {
@@ -13,6 +14,7 @@ function Routes() {
         <Route exact path="/order" component={ProductSelection} />
         <Route exact path="/about" component={About} />
       </Switch>
+      <Footer />
     </Router>
   );
 }

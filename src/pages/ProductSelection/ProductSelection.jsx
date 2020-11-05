@@ -5,7 +5,7 @@ import products from "../../utils/products";
 
 function ProductSelection() {
   return (
-    <>
+    <S.ProductSelection>
       <Section>
         <h1>Please select your preference:</h1>
         <S.TwoGridDesktop>
@@ -20,7 +20,7 @@ function ProductSelection() {
           ))}
         </S.TwoGridDesktop>
       </Section>
-    </>
+    </S.ProductSelection>
   );
 }
 

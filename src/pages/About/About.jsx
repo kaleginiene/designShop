@@ -1,8 +1,13 @@
 import React from "react";
 import { Section } from "../../components";
+import * as S from "./About.style";
 
 function About() {
-  return <Section fullWidth>About page</Section>;
+  return (
+    <S.About>
+      <Section fullWidth>About page</Section>
+    </S.About>
+  );
 }
 
 export default About;

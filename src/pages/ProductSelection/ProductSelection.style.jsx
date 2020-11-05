@@ -1,5 +1,9 @@
 import styled from "styled-components";
 
+export const ProductSelection = styled.main`
+  min-height: calc(100vh - 85px);
+`;
+
 export const TwoGridDesktop = styled.div`
   @media only screen and (min-width: 768px) {
     display: flex;
