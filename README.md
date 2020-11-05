@@ -1,3 +1,4 @@
+:dress: This is a simple web, where you can see the order form and filter the clothes you liked.
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
