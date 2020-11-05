@@ -5,7 +5,7 @@ export const Input = styled.input`
   box-sizing: border-box;
   border-radius: 5px;
   border: 1px solid ${(props) => props.theme.primary.background};
-  padding: 0 5px;
+  padding: 5px;
   height: ${(props) => props.theme.primary.height};
 `;
 
