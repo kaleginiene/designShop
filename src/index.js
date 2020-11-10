@@ -4,11 +4,14 @@ import Routes from "./Routes";
 import { ThemeProvider } from "styled-components";
 import theme from "./theme";
 import "normalize.css";
+import { UserProvider } from "./context/user.context";
 
 ReactDOM.render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>
-      <Routes />
+      <UserProvider>
+        <Routes />
+      </UserProvider>
     </ThemeProvider>
   </React.StrictMode>,
   document.getElementById("root")

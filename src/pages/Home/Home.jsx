@@ -2,8 +2,26 @@ import React, { useState } from "react";
 import { Section, InputField, Button } from "../../components";
 import * as S from "./Home.style";
 import { useHistory } from "react-router-dom";
+import { UserContext } from "../../context/user.context";
+
+function createUser(name, city, address, history, user) {
+  fetch("http://localhost:8080/add-user", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({ name, city, address }),
+  })
+    .then((data) => data.json())
+    .then((data) => {
+      user.setState({ data });
+      history.push("/order");
+    })
+    .catch((err) => console.log(err));
+}
 
 function Home() {
+  const user = React.useContext(UserContext);
   const [name, setName] = useState();
   const [city, setCity] = useState();
   const [address, setAddress] = useState();
@@ -17,8 +35,7 @@ function Home() {
         <form
           onSubmit={(e) => {
             e.preventDefault();
-            console.log(name, city, address);
-            history.push("/order");
+            createUser(name, city, address, history, user);
           }}
         >
           <S.InputWrapper>
