@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import { Header, Footer } from "./components";
 
-import { ProductSelection, About, Home } from "./pages";
+import { ProductSelection, About, Home, ConfirmationPage } from "./pages";
 
 function Routes() {
   return (
@@ -13,6 +13,7 @@ function Routes() {
         <Route exact path="/" component={Home} />
         <Route exact path="/order" component={ProductSelection} />
         <Route exact path="/about" component={About} />
+        <Route exact path="/confirm" component={ConfirmationPage} />
       </Switch>
       <Footer />
     </Router>
