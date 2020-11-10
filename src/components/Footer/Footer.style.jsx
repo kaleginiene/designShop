@@ -7,4 +7,5 @@ export const Footer = styled.footer`
   color: #fff;
   font-family: "Source Sans Pro", sans-serif;
   font-size: 0.8em;
+  margin-top: 20px;
 `;
